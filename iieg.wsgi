@@ -10,3 +10,5 @@ from Controllers.MapsController   import Maps
 api.add_resource(Maps,   '/maps'  )
 api.add_resource(Graphs, '/charts')
 api.add_resource(Home,   '/home'  )
+
+application = app
