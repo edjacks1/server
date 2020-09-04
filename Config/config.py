@@ -1,4 +1,3 @@
-from flask_restful     import Api
 from flask             import Flask
 from flask_sqlalchemy  import SQLAlchemy
 
@@ -25,7 +24,6 @@ class TestingConfig(Config):
     TESTING = True
 
 app  = Flask(__name__)
-api  = Api(app)
 conf = Config
 app.config.from_object(conf)
 db   = SQLAlchemy(app)
