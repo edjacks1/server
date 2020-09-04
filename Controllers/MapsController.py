@@ -7,6 +7,6 @@ class Maps(Resource):
         return {
             'status':True,
             'data': {
-                'points': get_xy(request.form['gender'])
+                'points': get_xy('todos')
             }
         }
