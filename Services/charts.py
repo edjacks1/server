@@ -1,4 +1,3 @@
-import pandas as pd
 from Config.config        import db
 from sqlalchemy           import extract  
 
