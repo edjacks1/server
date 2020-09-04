@@ -17,7 +17,7 @@ class Home(Resource):
         if(file and allowed_file(file.filename)):
             filename = secure_filename(file.filename)
             file.save(os.path.join('../Data/', filename))
-            csv_to_db(data=pd.read_csv("../Data/data.csv"),db=db)
+            csv_to_db(data=pd.read_csv("../Data/data.csv"),db=db) 
         
         return {
             'status':True,
