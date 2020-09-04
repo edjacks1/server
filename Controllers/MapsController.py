@@ -6,8 +6,7 @@ class Maps(Resource):
     def get(self):
         return {
             'status':True,
-            'data': 'hola'
-            # 'data': {
-            #     'points': get_xy(request.form['gender'])
-            # }
+            'data': {
+                'points': get_xy(request.form['gender'])
+            }
         }
