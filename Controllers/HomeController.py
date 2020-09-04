@@ -1,5 +1,5 @@
 import os
-import pandas as pd
+# import pandas as pd
 
 from Config.config     import db
 from flask_restful     import Resource
@@ -14,10 +14,10 @@ class Home(Resource):
         
         file = request.files['File']
         
-        if(file and allowed_file(file.filename)):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join('../Data/', filename))
-            csv_to_db(data=pd.read_csv("../Data/data.csv"),db=db)
+        # if(file and allowed_file(file.filename)):
+        #     filename = secure_filename(file.filename)
+        #     file.save(os.path.join('../Data/', filename))
+        #     csv_to_db(data=pd.read_csv("../Data/data.csv"),db=db)
         
         return {
             'status':True,
