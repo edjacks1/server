@@ -7,7 +7,7 @@ class Config(object):
     TESTING                        = False
     CSRF_ENABLED                   = True
     SECRET_KEY                     = 'miguel111'
-    SQLALCHEMY_DATABASE_URI        = 'postgresql://admin:jalisco.2050@localhost/iieg2'
+    SQLALCHEMY_DATABASE_URI        = 'postgresql://admin:jalisco.2050@localhost/app'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class ProductionConfig(Config):
