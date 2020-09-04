@@ -5,8 +5,8 @@ from Config.config     import db
 from flask_restful     import Resource
 from flask             import request
 from werkzeug.utils    import secure_filename
-from Services.submit   import allowed_file
-from Services.csvdb    import csv_to_db
+# from Services.submit   import allowed_file
+# from Services.csvdb    import csv_to_db
 
 
 class Home(Resource):
